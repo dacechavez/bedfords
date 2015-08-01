@@ -45,8 +45,10 @@ func main() {
 			//     Namespace, Key, Val string
 			// }
 			if token.DataAtom == 0x4702 { // <p> tag
-				d.Next()
-				fmt.Println(d.Token())
+				tt := d.Next()
+				if tt == html.TextToken {
+					fmt.Println(d.Token())
+				}
 			}
 		case html.TextToken: // text between start and end tag
 		case html.EndTagToken: // </tag>
