@@ -1,1 +1,1 @@
-Verifying Bedford's law in Go
+Verifying Bedford's law in Clojure
