@@ -1,1 +1,1 @@
-Verifying Bedford's law in Clojure
+Verifying Benford's law in Clojure
